@@ -5,7 +5,7 @@ public class StringUtils {
 
 
          //here magic will happen
-        if (!str.isBlank() && !str.startsWith("0")) {
+        if (str != null && !str.isBlank() && !str.startsWith("0")) {
             try {
                 double number = Double.parseDouble(str);
                 if (number > 0) {
